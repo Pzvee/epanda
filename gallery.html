@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js');window.__epandaReady=false;window.__epandaFallback=false;setTimeout(function(){if(!window.__epandaReady){window.__epandaFallback=true;document.documentElement.classList.remove('js')}},2500);</script>
+<link rel="preload" href="assets/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<title>车队相册 | E-panda 方程式赛车队</title>
+<meta name="description" content="E-panda方程式车队的相册——赛场风光、场下点滴、获奖荣誉，用镜头记录每一个速度与激情的瞬间。">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="canonical" href="https://epanda-racing.surge.sh/gallery.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="车队相册 | E-panda 方程式赛车队">
+<meta property="og:description" content="赛场风光、场下点滴、获奖荣誉，用镜头记录每一个速度与激情的瞬间。">
+<meta property="og:url" content="https://epanda-racing.surge.sh/gallery.html">
+<meta property="og:image" content="https://epanda-racing.surge.sh/车队logo/c62cd015cc3be12a70797cce63b0ef20.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/style.css?v=8">
+</head>
+<body>
+<a href="#main" class="skip-link">跳至主内容</a>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="车队logo/c62cd015cc3be12a70797cce63b0ef20.webp" alt="E-panda" width="38" height="38">
+      <span>E-panda</span>
+    </a>
+    <button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="about.html">关于我们</a></li>
+      <li><a href="memories.html">那年我们</a></li>
+      <li><a href="gallery.html" class="active">车队相册</a></li>
+      <li><a href="sponsors.html">赞助商</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+  <section class="about-hero reveal">
+    <h1>车队相册</h1>
+    <p>用镜头记录每一个速度与激情的瞬间</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-tabs reveal">
+        <button class="gallery-tab active" data-cat="all">全部</button>
+        <button class="gallery-tab" data-cat="comp">赛场风光</button>
+        <button class="gallery-tab" data-cat="daily">场下点滴</button>
+        <button class="gallery-tab" data-cat="awards">获奖荣誉</button>
+        <button class="gallery-tab" data-cat="logos">车队 Logo</button>
+      </div>
+      <div class="gallery-grid" id="gallery"></div>
+      <noscript>
+        <p style="text-align:center;color:var(--text-secondary);padding:40px 0;">本页相册需启用 JavaScript 才能浏览，请开启后刷新，或前往「关于我们」了解车队。</p>
+      </noscript>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="车队logo/c62cd015cc3be12a70797cce63b0ef20.webp" alt="E-panda" width="34" height="34" loading="lazy">
+      <span>E-panda 方程式赛车队</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我们</a>
+      <a href="memories.html">那年我们</a>
+      <a href="gallery.html">车队相册</a>
+      <a href="sponsors.html">赞助商</a>
+    </div>
+    <p>&copy; 2026 <strong>西华大学 E-panda 方程式赛车队</strong></p>
+    <p class="footer-contact">合作赞助：1718413024&#64;qq&#46;com &nbsp;|&nbsp; 网站运维：lipingfei255&#64;163&#46;com</p>
+  </div>
+</footer>
+
+<button class="back-top" aria-label="返回顶部">&uarr;</button>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="关闭">&times;</button>
+  <button class="lightbox-prev" aria-label="上一张">&lsaquo;</button>
+  <button class="lightbox-next" aria-label="下一张">&rsaquo;</button>
+  <img src="" alt="" id="lb-img">
+  <div class="lightbox-nav" id="lb-nav"></div>
+  <div class="lightbox-count"></div>
+</div>
+
+<script src="assets/script.js?v=8" onerror="document.documentElement.classList.remove('js')"></script>
+<script>
+const galleryData = {
+  comp:  { label: '赛场风光', srcs: ['赛场风采/0f621cee9ff8188b8d302ba64991b88f.webp','赛场风采/2167d0da0937a531d7a6523113204352.webp','赛场风采/4ff3ac3840f05eeada0912845e038f71.webp','赛场风采/8b7aa279d0b76687a0329787a922b8da.webp','赛场风采/ac9c64ea395517a339cb739934ce79b6.webp','赛场风采/c71ae83ab3ab4a05e275a7b72318f01e.webp','赛场风采/d5b118e6d82dcdce4de8ea3973495642.webp','赛场风采/e3a7f97998e8a4bf677cd3000fe11f3e.webp','赛场风采/edb6f0248b528e7852458bc3c918b70b.webp'] },
+  daily: { label: '场下点滴', srcs: ['场下点滴/25aeebfcb4945eaab7490c8689030d79.webp','场下点滴/3cc524ab3b440e6005a668bcc92a52e1.webp','场下点滴/627c09ecb86c07b57899d516c37f0bc0.webp','场下点滴/6582da9bb3907e02b5b1cc64736634f7.webp','场下点滴/7e234d1c7a881ee80077910e5827931e.webp'] },
+  awards:{ label: '获奖荣誉', srcs: ['获奖荣誉/0146300a411f273c4b771275b526036c.webp','获奖荣誉/052c4c31ab9434b9733ad2c87d2d02af.webp','获奖荣誉/192ea0b6cc4e0316e8be5425418fbef4.webp','获奖荣誉/4788da663b3a7b1c9d42b0c571b32b8a.webp','获奖荣誉/6105dab8e3b80393361859aabcae3e85.webp','获奖荣誉/65e2810232b1157dd3ebf11d9a0af96d.webp','获奖荣誉/d569e40872d8d88e4f2c1ae3c62dd0e6.webp','获奖荣誉/da25be54ae76f4c4fa4926505fd2f5a5.webp'] },
+  logos: { label: '车队 Logo', srcs: ['车队logo/matrix-media-1781438353229-ad0bd3ba.webp','车队logo/c62cd015cc3be12a70797cce63b0ef20.webp'] }
+};
+
+const grid = document.getElementById('gallery');
+let allImages = [];
+
+// Prebuild flat array for "all" mode
+Object.values(galleryData).forEach(d => {
+  d.srcs.forEach(src => allImages.push({ src, label: d.label }));
+});
+
+function render(cat) {
+  grid.innerHTML = '';
+
+  if (cat === 'all') {
+    allImages.forEach(({ src, label }, i) => {
+      grid.appendChild(createItem(src, label, () => {
+        lightbox.open(allImages.map(x => x.src), i);
+      }));
+    });
+  } else {
+    const data = galleryData[cat];
+    if (!data) return;
+    data.srcs.forEach((src, i) => {
+      grid.appendChild(createItem(src, data.label, () => {
+        lightbox.open(data.srcs, i);
+      }));
+    });
+  }
+}
+
+function thumbOf(src) { return src.replace(/\.webp$/, '-480w.webp'); }
+
+function createItem(src, label, onClick) {
+  const item = document.createElement('div');
+  item.className = 'gallery-item';
+  item.setAttribute('tabindex', '0');
+  item.setAttribute('role', 'button');
+  item.setAttribute('aria-label', label);
+  item.addEventListener('click', onClick);
+  item.addEventListener('keydown', e => { if (e.key === 'Enter') onClick(); });
+  item.innerHTML = `<img src="${thumbOf(src)}" alt="${label}" loading="lazy" decoding="async" width="480" height="360"><div class="gallery-item-overlay"><span>${label}</span></div>`;
+  return item;
+}
+
+document.querySelectorAll('.gallery-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.gallery-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    render(tab.dataset.cat);
+  });
+});
+
+render('all');
+</script>
+</body>
+</html>

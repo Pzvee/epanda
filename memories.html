@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js');window.__epandaReady=false;window.__epandaFallback=false;setTimeout(function(){if(!window.__epandaReady){window.__epandaFallback=true;document.documentElement.classList.remove('js')}},2500);</script>
+<link rel="preload" href="assets/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<title>那年我们 | E-panda 方程式赛车队</title>
+<meta name="description" content="E-panda方程式车队——那年我们，感谢你们曾提灯引路，温柔了旧时光。">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="canonical" href="https://epanda-racing.surge.sh/memories.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="那年我们 | E-panda 方程式赛车队">
+<meta property="og:description" content="感谢你们曾提灯引路，温柔了旧时光。无论走多远，E-panda永远亮着等你们回家的灯。">
+<meta property="og:url" content="https://epanda-racing.surge.sh/memories.html">
+<meta property="og:image" content="https://epanda-racing.surge.sh/车队logo/c62cd015cc3be12a70797cce63b0ef20.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/style.css?v=8">
+</head>
+<body>
+<a href="#main" class="skip-link">跳至主内容</a>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="车队logo/c62cd015cc3be12a70797cce63b0ef20.webp" alt="E-panda" width="38" height="38">
+      <span>E-panda</span>
+    </a>
+    <button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="about.html">关于我们</a></li>
+      <li><a href="memories.html" class="active">那年我们</a></li>
+      <li><a href="gallery.html">车队相册</a></li>
+      <li><a href="sponsors.html">赞助商</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+  <section class="memories-hero reveal">
+    <h1>那年我们</h1>
+    <p class="memories-quote">感谢你们曾提灯引路，温柔了旧时光。此去星辰大海，愿跃入人海各自灿烂；无论走多远，E-panda永远亮着等你们回家的灯。</p>
+  </section>
+
+  <section class="section">
+    <div class="container" id="memories-wrap">
+      <noscript>
+        <p style="text-align:center;color:var(--text-secondary);padding:40px 0;">本页照片需启用 JavaScript 才能浏览，请开启后刷新。</p>
+      </noscript>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="车队logo/c62cd015cc3be12a70797cce63b0ef20.webp" alt="E-panda" width="34" height="34" loading="lazy">
+      <span>E-panda 方程式赛车队</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我们</a>
+      <a href="memories.html">那年我们</a>
+      <a href="gallery.html">车队相册</a>
+      <a href="sponsors.html">赞助商</a>
+    </div>
+    <p>&copy; 2026 <strong>西华大学 E-panda 方程式赛车队</strong></p>
+    <p class="footer-contact">合作赞助：1718413024&#64;qq&#46;com &nbsp;|&nbsp; 网站运维：lipingfei255&#64;163&#46;com</p>
+  </div>
+</footer>
+
+<button class="back-top" aria-label="返回顶部">&uarr;</button>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="关闭">&times;</button>
+  <button class="lightbox-prev" aria-label="上一张">&lsaquo;</button>
+  <button class="lightbox-next" aria-label="下一张">&rsaquo;</button>
+  <img src="" alt="" id="lb-img">
+  <div class="lightbox-nav" id="lb-nav"></div>
+  <div class="lightbox-count"></div>
+</div>
+
+<script src="assets/script.js?v=8" onerror="document.documentElement.classList.remove('js')"></script>
+<script>
+// 按毕业届别分组。添加新一届：复制一项，改 year 与 photos 即可。
+// 图片放在对应年份子目录，如 那年我们/23届/。
+const memoriesByYear = [
+  {
+    year: '22届',
+    photos: [
+      '那年我们/22届/0.webp',
+      '那年我们/22届/1.webp',
+      '那年我们/22届/2.webp',
+      '那年我们/22届/3.webp',
+      '那年我们/22届/4.webp',
+      '那年我们/22届/5.webp',
+      '那年我们/22届/6.webp',
+      '那年我们/22届/c1b2a09085255913c4c35d19478bd4d0.webp'
+    ]
+  }
+  // 示例（添加时去掉注释）：
+  // ,{ year: '23届', photos: ['那年我们/23届/xxx.webp'] }
+];
+
+const wrap = document.getElementById('memories-wrap');
+
+memoriesByYear.forEach(group => {
+  const head = document.createElement('div');
+  head.className = 'section-header reveal';
+  head.innerHTML = `<div class="section-label">毕业届</div><h2 class="section-title">${group.year}</h2>`;
+  wrap.appendChild(head);
+
+  const grid = document.createElement('div');
+  grid.className = 'gallery-grid';
+  group.photos.forEach((src, i) => {
+    const item = document.createElement('div');
+    item.className = 'gallery-item';
+    item.setAttribute('tabindex', '0');
+    item.setAttribute('role', 'button');
+    item.setAttribute('aria-label', `${group.year} 照片 ${i + 1}`);
+    item.addEventListener('click', () => lightbox.open(group.photos, i));
+    item.addEventListener('keydown', e => { if (e.key === 'Enter') lightbox.open(group.photos, i); });
+    item.innerHTML = `<img src="${src.replace(/\.webp$/, '-480w.webp')}" alt="${group.year}" loading="lazy" decoding="async" width="480" height="360"><div class="gallery-item-overlay"><span>${group.year}</span></div>`;
+    grid.appendChild(item);
+  });
+  wrap.appendChild(grid);
+});
+</script>
+</body>
+</html>
